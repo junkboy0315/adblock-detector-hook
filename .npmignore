@@ -1,0 +1,13 @@
+# for n in * .[^.]**; do printf '%s\n' "$n"; done
+
+# README.md
+# dist
+node_modules
+# package.json
+public
+src
+tsconfig.json
+yarn.lock
+.git
+.gitignore
+.npmignore
