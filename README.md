@@ -16,7 +16,11 @@ export const YourComponent = () => {
 
 ## lazy detection
 
-If you want to detect the adblocker at your desired timing, use the `lazy` option and the `check` function.
+By default, this hook checks for the presence of adblocker when mounting components.
+
+If you want to disable this feature and detect it when you need it, use the `lazy` option and the `check` function.
+
+`detected` will be `false` until the `check` function is executed.
 
 ```tsx
 import { useAdBlockDetector } from 'adblock-detector-hook';
